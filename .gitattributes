@@ -1,7 +1,7 @@
 ###############################################################################
 # Modify linguist file type handling to force the detected language to be C#.
 ###############################################################################
-*.js linguist-language=csharp
+*.js linguist-vendored=true
 
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
