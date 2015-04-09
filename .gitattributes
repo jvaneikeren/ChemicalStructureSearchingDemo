@@ -3,6 +3,7 @@
 ###############################################################################
 *.js linguist-vendored=true
 *.html linguist-vendored=true
+*.py linguist-vendored=true
 
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
