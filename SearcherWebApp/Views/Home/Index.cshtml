@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Chemical Structure Searching Demo";
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/ui.js")"></script>
+}
+
+@*<div class="jumbotron">
+    <p class="lead">This is a live demo of a Chemical Structure Searching implementation (using <a href="https://www.nuget.org/packages/Lucene.Net/">Lucene.Net</a> 
+    and <a href="https://www.nuget.org/packages/Indigo.Net/">Indigo.Net</a>) presented at the <a href="http://DotNetFringe.org">2015 .NET Fringe Conference</a>.</p>
+    <p><a href="https://github.com/jvaneikeren" class="btn btn-primary btn-lg">View Source on GitHub &raquo;</a></p>
+</div>*@
+
+<div class="row">
+    <div id="queryPanel" class="col-md-4">
+
+        <h2>Query:</h2>
+        <div>
+            <a href="#" id="drawButton" class="btn btn-default queryActionButton">Draw</a>
+            <a href="#" id="browseButton" class="btn btn-default queryActionButton">Browse</a>
+            <a href="#" id="pasteButton" class="btn btn-default queryActionButton">Paste</a>
+            <a href="#" id="sampleButton" class="btn btn-default queryActionButton">Sample</a>
+        </div>
+
+        <input id="queryMolfileContents" type="hidden" />
+        <div id="queryImage">
+            <div id="queryImageDragDropInstructions">
+                Drag and drop a *.mol file<br />from your file manager
+            </div>
+        </div>
+        <div class="searchTypeButtons">
+            <span class="searchTypeButton"><input type="radio" name="searchType" id="searchTypeExact" value="Exact" checked /><label for="searchTypeExact">Exact</label></span>
+            <span class="searchTypeButton"><input type="radio" name="searchType" id="searchTypeSimilarity" value="Similarity" /><label for="searchTypeSimilarity">Similarity</label></span>
+            <span class="searchTypeButton"><input type="radio" name="searchType" id="searchTypeSubstructure" value="Substructure" /><label for="searchTypeSubstructure">Substructure</label></span>
+        </div>
+
+        <div>
+            <a href="#" id="searchButton" class="btn btn-primary btn-lg disabled">Search &raquo;</a>
+            <img id="searchSpinner" src="~/Images/ajax-loader-round.gif" />
+        </div>
+
+    </div>
+
+    <div id="resultsPanel" class="col-md-4">&nbsp;</div>
+
+</div>

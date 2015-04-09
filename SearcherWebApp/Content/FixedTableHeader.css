@@ -1,0 +1,50 @@
+﻿/*.fixed-table {
+    /*background-color: white;
+    width: 100%;*/
+    /*overflow-x: auto;*/
+    /*overflow-y: auto;
+}*/
+
+.fixed-table-container {
+    height: 500px;
+    background-color: lightgray;
+    /* above is decorative or flexible */
+    position: relative; /* could be absolute or relative */
+    padding-top: 30px; /* height of header */
+    overflow-x: auto;
+    border: 1px solid black;
+}
+
+.fixed-table-container-inner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+    
+.th-inner {
+    position: absolute;
+    top: 0;
+    line-height: 35px; /* height of header */
+    text-align: left;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    margin-left: -5px;
+}
+
+/* extra-wrap */
+		
+.extrawrap th {
+	text-align: center;
+}
+		
+.extra-wrap {
+	width: 100%;
+}
+    
+.hidden-header .th-inner {
+    position: static;
+    overflow-y: hidden;
+    height: 0;
+    white-space: nowrap;
+    padding-right: 5px;
+}

@@ -1,0 +1,122 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+label {
+    margin-left: 3px;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0 none;
+}
+
+th {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td {
+    padding: 5px;
+    border-right: 1px solid black;
+    background-color: white;
+}
+
+#queryPanel {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+#queryImage {
+    border: 1px solid #CCCCCC;
+    width: 293px; 
+    height: 200px;
+    text-align: center;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#queryImageDragDropInstructions {
+    color: #CCCCCC;
+    margin-top: 80px;
+}
+
+.searchTypeButtons {
+    margin-top: 10px;
+}
+
+.searchTypeButton {
+    margin-right: 10px;
+}
+
+.queryActionButton {
+    min-width: 67px;
+    margin-bottom: 10px;
+}
+
+#searchButton {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#searchSpinner {
+    margin-left: 20px;
+    display: none;
+}
+
+#resultsPanel {
+    display: none; 
+}
+
+.resultRow {
+    border-top: 1px solid black;
+}
+
+.resultImage {
+    width: 150px; 
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.disabled {
+    z-index: 1000;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.error {
+    color: red;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.drawDialog .modal-dialog {
+    width: 965px !important;
+}

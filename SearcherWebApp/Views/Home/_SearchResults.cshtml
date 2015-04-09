@@ -1,0 +1,41 @@
+﻿@model List<ChemicalStructureSearchingDemo.Core.ChemicalStructureSearchResult>
+
+<h2>Results (@this.Model.Count):</h2>
+
+    @if (this.Model.Count > 0)
+    {
+        int index = 0;
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                    <th>Name</th>
+                    <th>Structure</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var result in this.Model)
+                {
+                    index++;
+                    string id = "result" + index;
+                    <tr class="resultRow">
+                        <td class="textAlignCenter">@index</td>
+                        <td class="textAlignCenter">@result.ScoreString</td>
+                        <td>@result.ChemicalStructure.Name</td>
+                        <td>
+                            <div id="@id" class="result">
+                                <div class="resultImage" draggable="true" ondragstart="event.dataTransfer.setData('text', '@id')">&nbsp;</div>
+                                <input class="resultMolfile" type="hidden" value="@result.ChemicalStructure.MolfileContents" />
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div>No results matching your query were found.</div>
+    }
