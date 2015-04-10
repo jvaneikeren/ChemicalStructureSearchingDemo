@@ -102,6 +102,7 @@ namespace ChemicalStructureSearchingDemo.Core
                 indigo.setOption("render-output-format", "png");
                 indigo.setOption("render-relative-thickness", 1.6f);
                 IndigoObject structure = CreateIndigoStructure(indigo);
+                structure.dearomatize();
                 structure.layout();
                 bitmap = indigoRenderer.renderToBitmap(structure);
                 structure.Dispose();
@@ -183,6 +184,7 @@ namespace ChemicalStructureSearchingDemo.Core
         {
             // Load the molfile as an Indigo object and set basic properties.
             IndigoObject structure = indigo.loadMolecule(this.MolfileContents);
+            structure.aromatize();
             structure.clearCisTrans();
             structure.clearStereocenters();
 

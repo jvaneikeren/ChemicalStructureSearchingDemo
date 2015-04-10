@@ -167,8 +167,8 @@
     <Content Include="Ketcher\render_buttons.sh" />
     <Content Include="Ketcher\Thumbs.db" />
     <Content Include="App_Data\Index\segments.gen" />
-    <Content Include="App_Data\Index\segments_4" />
-    <Content Include="App_Data\Index\_2.cfs" />
+    <Content Include="App_Data\Index\segments_2" />
+    <Content Include="App_Data\Index\_0.cfs" />
     <None Include="Resources\acid chloride.txt" />
     <Content Include="Images\ajax-loader-round.gif" />
     <Content Include="Images\ajax_loader_thin_small.gif" />

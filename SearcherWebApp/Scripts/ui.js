@@ -118,7 +118,7 @@
                     if (molfileContents) {
                         document.getElementById("ketcherFrame").contentWindow.ketcher.setMolecule(molfileContents);
                     }
-                }, 500);
+                }, 1000);
             },
         });
 
