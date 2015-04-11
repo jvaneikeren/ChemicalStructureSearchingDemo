@@ -41,17 +41,13 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="indigo-dotnet, Version=1.1.5106.28529, Culture=neutral, PublicKeyToken=ca8e3320bc4499e0, processorArchitecture=MSIL">
+    <Reference Include="indigo-cs, Version=1.0.4185.29434, Culture=neutral, PublicKeyToken=ca8e3320bc4499e0, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Indigo.Net.1.1.12\lib\net20\indigo-dotnet.dll</HintPath>
+      <HintPath>..\packages\Indigo.Net.1.0.0\lib\net20\indigo-cs.dll</HintPath>
     </Reference>
-    <Reference Include="indigo-inchi-dotnet, Version=1.1.5106.28530, Culture=neutral, PublicKeyToken=6a31cb7055c16a21, processorArchitecture=MSIL">
+    <Reference Include="indigo-renderer-cs, Version=1.0.4185.29434, Culture=neutral, PublicKeyToken=09f0421d14bc0b92, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Indigo.Net.1.1.12\lib\net20\indigo-inchi-dotnet.dll</HintPath>
-    </Reference>
-    <Reference Include="indigo-renderer-dotnet, Version=1.1.5106.28530, Culture=neutral, PublicKeyToken=09f0421d14bc0b92, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Indigo.Net.1.1.12\lib\net20\indigo-renderer-dotnet.dll</HintPath>
+      <HintPath>..\packages\Indigo.Net.1.0.0\lib\net20\indigo-renderer-cs.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net">
       <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
@@ -73,7 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
