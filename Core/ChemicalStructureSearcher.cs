@@ -39,7 +39,7 @@ namespace ChemicalStructureSearchingDemo.Core
             Query query = CreateLuceneQuery(queryStructure, searchType);
 
             // Execute to obtain lucene hit pointers; we're going to artifically cap this out at 100 hits.
-            TopDocs hits = this.IndexSearcher.Search(query, this.IndexSearcher.IndexReader.NumDocs());
+            TopDocs hits = this.IndexSearcher.Search(query, 100);
 
             // Loop through and form the results.
             foreach(ScoreDoc scoreDoc in hits.ScoreDocs)

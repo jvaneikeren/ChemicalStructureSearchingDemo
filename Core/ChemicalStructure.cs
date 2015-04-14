@@ -92,20 +92,27 @@ namespace ChemicalStructureSearchingDemo.Core
         {
             Bitmap bitmap = null;
 
-            using (Indigo indigo = new Indigo())
+            try
             {
-                IndigoRenderer indigoRenderer = new IndigoRenderer(indigo);
-                indigo.setOption("render-coloring", true);
-                indigo.setOption("render-image-size", width, height);
-                indigo.setOption("render-label-mode", "hetero");
-                indigo.setOption("render-margins", 10, 10);
-                indigo.setOption("render-output-format", "png");
-                indigo.setOption("render-relative-thickness", 1.6f);
-                IndigoObject structure = CreateIndigoStructure(indigo);
-                structure.dearomatize();
-                structure.layout();
-                bitmap = indigoRenderer.renderToBitmap(structure);
-                structure.Dispose();
+                using (Indigo indigo = new Indigo())
+                {
+                    IndigoRenderer indigoRenderer = new IndigoRenderer(indigo);
+                    indigo.setOption("render-coloring", true);
+                    indigo.setOption("render-image-size", width, height);
+                    indigo.setOption("render-label-mode", "hetero");
+                    indigo.setOption("render-margins", 10, 10);
+                    indigo.setOption("render-output-format", "png");
+                    indigo.setOption("render-relative-thickness", 1.6f);
+                    IndigoObject structure = CreateIndigoStructure(indigo);
+                    structure.dearomatize();
+                    structure.layout();
+                    bitmap = indigoRenderer.renderToBitmap(structure);
+                    structure.Dispose();
+                }
+            }
+            catch
+            {
+                bitmap = Properties.Resources.Error;
             }
 
             return bitmap;
