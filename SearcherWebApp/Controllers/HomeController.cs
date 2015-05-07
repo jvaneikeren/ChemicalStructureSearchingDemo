@@ -49,6 +49,8 @@ namespace ChemicalStructureSearchingDemo.SearcherWebApp.Controllers
                     return Content(ChemicalStructureSearchingDemo.SearcherWebApp.Properties.Resources.ampicillin);
                 case "prozac":
                     return Content(ChemicalStructureSearchingDemo.SearcherWebApp.Properties.Resources.Prozac);
+                case "substructure":
+                    return Content(ChemicalStructureSearchingDemo.SearcherWebApp.Properties.Resources.Substructure);
             }
 
             return Content(String.Empty);

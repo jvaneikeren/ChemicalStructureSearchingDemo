@@ -118,5 +118,25 @@ namespace ChemicalStructureSearchingDemo.SearcherWebApp.Properties {
                 return ResourceManager.GetString("Prozac", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///  Ketcher 04101517072D 1   1.00000     0.00000     0
+        ///
+        ///  5  5  0     0  0            999 V2000
+        ///    0.7071    1.4142    0.0000 C   0  0  0  0  0  0  0  0  0  0  0false
+        ///    1.4142    0.7071    0.0000 C   0  0  0  0  0  0  0  0  0  0  0false
+        ///    0.7071    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0false
+        ///    0.0000    0.7071    0.0000 C   0  0  0  0  0  0  0  0  0  0  0false
+        ///    2.4142    0.7071    0.0000 O   0  0  0  0  0  0  0  0  0  0  0false
+        ///  1  2  1  0     0  0
+        ///  2  3  1  0     0  0
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Substructure {
+            get {
+                return ResourceManager.GetString("Substructure", resourceCulture);
+            }
+        }
     }
 }

@@ -194,7 +194,8 @@
             title: "Import Sample Molfile",
             message: $("<div><input type='radio' name='sampleName' id='sampleAcidChloride' value='acid_chloride' checked /><label for='sampleAcidChloride'>Acid Chloride</label></div>" + 
                        "<div><input type='radio' name='sampleName' id='sampleAmpicillin' value='ampicillin' /><label for='sampleAmpicillin'>Ampicillin</label></div>" +
-                       "<div><input type='radio' name='sampleName' id='sampleProzac' value='prozac' /><label for='sampleProzac'>Prozac</label></div>"),
+                       "<div><input type='radio' name='sampleName' id='sampleProzac' value='prozac' /><label for='sampleProzac'>Prozac</label></div>" + 
+                       "<div><input type='radio' name='sampleName' id='sampleSubstructure' value='substructure' /><label for='sampleSubstructure'>[Substructure]</label></div>"),
             buttons: [
                 {
                     label: "Import",

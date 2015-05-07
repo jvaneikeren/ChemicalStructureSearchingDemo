@@ -41,12 +41,10 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="indigo-cs, Version=1.0.4185.29434, Culture=neutral, PublicKeyToken=ca8e3320bc4499e0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="indigo-cs">
       <HintPath>..\packages\Indigo.Net.1.0.0\lib\net20\indigo-cs.dll</HintPath>
     </Reference>
-    <Reference Include="indigo-renderer-cs, Version=1.0.4185.29434, Culture=neutral, PublicKeyToken=09f0421d14bc0b92, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="indigo-renderer-cs">
       <HintPath>..\packages\Indigo.Net.1.0.0\lib\net20\indigo-renderer-cs.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net">

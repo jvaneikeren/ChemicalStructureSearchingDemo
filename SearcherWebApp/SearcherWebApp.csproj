@@ -169,7 +169,6 @@
     <Content Include="App_Data\Index\segments.gen" />
     <Content Include="App_Data\Index\segments_2" />
     <Content Include="App_Data\Index\_0.cfs" />
-    <None Include="Properties\PublishProfiles\ChemicalStructureSearchingDemo.pubxml" />
     <None Include="Resources\acid chloride.txt" />
     <Content Include="Images\ajax-loader-round.gif" />
     <Content Include="Images\ajax_loader_thin_small.gif" />
@@ -263,6 +262,7 @@
     <Content Include="Ketcher\util\vec2.js" />
     <None Include="Resources\ampicillin.txt" />
     <None Include="Resources\Prozac.txt" />
+    <None Include="Resources\Substructure.txt" />
     <Content Include="Scripts\bootstrap-dialog.js" />
     <Content Include="Scripts\bootstrap-dialog.min.js" />
     <Content Include="Scripts\bootstrap.js" />
